@@ -15,7 +15,7 @@
 		boolean successFlag = true;
 		String regex = "^([a-z0-9A-Z]+[-|\\.]?)+[a-z0-9A-Z]@([a-z0-9A-Z]+(-[a-z0-9A-Z]+)?\\.)+[a-zA-Z]{2,}$";
 		try {
-			Scanner sc = new Scanner(new File("D:\\WorkSpace\\JavaWeb\\WebContent\\images\\userlist.txt"));
+			Scanner sc = new Scanner(new File("D:\\WorkSpace\\MD5-And-QrCode\\WebContent\\images\\userlist.txt"));
 			while (sc.hasNextLine()) {
 				String line = sc.nextLine();
 				String ss[] = line.split("\\s+");
@@ -30,7 +30,7 @@
 		if (successFlag) {
 			if (accountNumber.matches(regex)) {
 				try {
-					PrintWriter pw = new PrintWriter(new FileWriter("D:\\WorkSpace\\Javaweb\\WebContent\\images\\userlist.txt", true));
+					PrintWriter pw = new PrintWriter(new FileWriter("D:\\WorkSpace\\MD5-And-QrCode\\WebContent\\images\\userlist.txt", true));
 					pw.println(accountNumber + " " + password + " " + userName);
 					pw.close();
 					%>
