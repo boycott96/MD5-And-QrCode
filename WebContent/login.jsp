@@ -15,7 +15,7 @@
 	boolean find=false;
 	
 	try{
-		Scanner sc = new Scanner(new File("D:\\WorkSpace\\Java-web\\WebContent\\images\\userlist.txt"));
+		Scanner sc = new Scanner(new File("D:\\WorkSpace\\JavaWeb\\WebContent\\images\\userlist.txt"));
 		while(sc.hasNextLine()){
 			String line=sc.nextLine();
 			String ss[]=line.split("\\s+");

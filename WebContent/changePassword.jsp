@@ -16,7 +16,7 @@
 		String password = request.getParameter("password");
 		boolean successFlag = false;
 		try {
-			Scanner sc = new Scanner(new File("D:\\WorkSpace\\Java-web\\WebContent\\images\\userlist.txt"));
+			Scanner sc = new Scanner(new File("D:\\WorkSpace\\JavaWeb\\WebContent\\images\\userlist.txt"));
 			while (sc.hasNextLine()) {
 				String line = sc.nextLine();
 				String ss[] = line.split("\\s+");
@@ -30,9 +30,9 @@
 		}
 		if (successFlag) {
 			try {
-				Scanner sc = new Scanner(new File("D:\\WorkSpace\\Java-web\\WebContent\\images\\userlist.txt"));
+				Scanner sc = new Scanner(new File("D:\\WorkSpace\\JavaWeb\\WebContent\\images\\userlist.txt"));
 				PrintWriter pw = new PrintWriter(
-						new FileWriter("D:\\WorkSpace\\Java-web\\WebContent\\images\\swap.txt", false));
+						new FileWriter("D:\\WorkSpace\\JavaWeb\\WebContent\\images\\swap.txt", false));
 				while (sc.hasNextLine()) {
 					String line = sc.nextLine();
 					String ss[] = line.split("\\s+");
@@ -47,9 +47,9 @@
 			} catch (Exception e) {
 			}
 			try {
-				Scanner scc = new Scanner(new File("D:\\WorkSpace\\Java-web\\WebContent\\images\\swap.txt"));
+				Scanner scc = new Scanner(new File("D:\\WorkSpace\\JavaWeb\\WebContent\\images\\swap.txt"));
 				PrintWriter pww = new PrintWriter(
-						new FileWriter("D:\\WorkSpace\\Java-web\\WebContent\\images\\userlist.txt", false));
+						new FileWriter("D:\\WorkSpace\\JavaWeb\\WebContent\\images\\userlist.txt", false));
 				while (scc.hasNextLine()) {
 					String line = scc.nextLine();
 					pww.println(line);
